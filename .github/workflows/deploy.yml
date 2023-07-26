@@ -32,9 +32,11 @@
           with:
             node-version: "18"          
         - name: Install deps
-          run: npm i        
+          run: npm i
+          
         - name: Build
-          run: npm run build:prod     
+          run: npm run build:prod
+          
         - name: Deploy
           uses: crazy-max/ghaction-github-pages@v3.1.0
           with:
