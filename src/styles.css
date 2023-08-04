@@ -97,6 +97,14 @@
     scroll-behavior: smooth;
   }
 }
+table{
+  margin : auto;
+}
+th, td {
+  padding: 0.5rem;
+}
+
+
 
 body {
   margin: 0;

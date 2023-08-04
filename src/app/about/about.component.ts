@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 //Importación de la interfaz
-import { Persona } from '../interfaces/persona';
+import { Partido } from '../interfaces/partido';
 
 //Importación del servicio
 import { ServicioService } from '../providers/servicio.service';
@@ -11,10 +11,10 @@ import { ServicioService } from '../providers/servicio.service';
 })
 export class AboutComponent {
   constructor(private dataProvider: ServicioService) { }
-  public data : Persona[] = [];
+  public data : Partido[] = [];
   ngOnInit() {
     this.dataProvider.getResponse().subscribe((response) => { 
-      this.data = (response as Persona[]).slice(0,10); 
+      this.data = (response as Partido[]).slice(0,10); 
     })
   }
 }
