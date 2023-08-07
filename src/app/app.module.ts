@@ -12,6 +12,7 @@ import { CalltoactionComponent } from './calltoaction/calltoaction.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { MatchesComponent } from './matches/matches.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
     PortfolioComponent,
     CalltoactionComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MatchesComponent
   ],
   imports: [
     BrowserModule,
