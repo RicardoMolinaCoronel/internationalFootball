@@ -77,7 +77,29 @@
 <section class="page-section bg-dark text-white">
     <div class="container px-4 px-lg-5 text-center">
         <h2 class="mb-4">Carga un partido histórico al azar</h2>
-        <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Carga ahora</a>
+        <a (click)="generarPartidoAleatorio()" class="btn btn-light btn-xl" >Carga ahora</a>
+        <table class="text-white-75">
+            <tbody>
+                <tr>
+                    <th>Local</th>
+                    <th>Goles</th>
+                    <th> - </th>
+                    <th>Goles</th>
+                    <th>Visitante</th>
+                    <th>Fecha</th> 
+                    <th>Ciudad</th>
+                </tr>    
+                <tr >
+                        <td>{{ randomdata?.home_team }}</td>
+                        <td>{{ randomdata?.home_score }}</td>
+                        <td> </td>
+                        <td>{{ randomdata?.away_score }}</td>
+                        <td>{{ randomdata?.away_team }}</td>
+                        <td>{{ randomdata?.date }}</td>
+                        <td>{{ randomdata?.city }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 <!-- Contact-->
